@@ -7,11 +7,11 @@ public class Main {
     public static void main(String[] args) throws SQLException, RuntimeException {
         ProductUtil.createTable();
         ProductUtil.insertProduct(new Product("Sugar", "Mexico",15, 709, 3 ));
-//        ProductUtil.insertProduct(new Product("Car", "BMW", 40000, 2022, 2));
-//        ProductUtil.insertProduct(new Product("Car", "Mercedes-Benz", 10000, 2009, 5));
-//        ProductUtil.insertProduct(new Product("Sugar", "Georgia", 10, 2021, 10));
-//        ProductUtil.insertProduct(new Product("Water", "Borjomi", 5, 2020, 100));
-//        ProductUtil.insertProduct(new Product("Coffee", "Brazil", 10, 2021, 5));
+        ProductUtil.insertProduct(new Product("Car", "BMW", 40000, 2022, 2));
+        ProductUtil.insertProduct(new Product("Car", "Mercedes-Benz", 10000, 2009, 5));
+        ProductUtil.insertProduct(new Product("Sugar", "Georgia", 10, 2021, 10));
+        ProductUtil.insertProduct(new Product("Water", "Borjomi", 5, 2020, 100));
+        ProductUtil.insertProduct(new Product("Coffee", "Brazil", 10, 2021, 5));
 
         ProductUtil.getNameAmount()
                 .forEach(System.out::println);
